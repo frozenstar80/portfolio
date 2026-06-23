@@ -1,0 +1,22 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Polygon Local app preview</title>
+  <desc id="desc">Premium mobile app placeholder showing operational dashboards and local workflows.</desc>
+  <rect width="1200" height="760" fill="#0B1628"/>
+  <circle cx="1010" cy="110" r="260" fill="#2563EB" opacity="0.16"/>
+  <circle cx="180" cy="690" r="260" fill="#7C3AED" opacity="0.14"/>
+  <rect x="86" y="82" width="1028" height="596" rx="38" fill="#F8FAFC"/>
+  <rect x="122" y="122" width="484" height="516" rx="30" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="154" y="158" width="220" height="20" rx="10" fill="#0F172A"/>
+  <rect x="154" y="200" width="390" height="14" rx="7" fill="#94A3B8"/>
+  <rect x="154" y="248" width="154" height="154" rx="24" fill="#DBEAFE"/>
+  <rect x="330" y="248" width="214" height="154" rx="24" fill="#EFF6FF"/>
+  <rect x="154" y="430" width="390" height="54" rx="18" fill="#F1F5F9"/>
+  <rect x="154" y="506" width="390" height="54" rx="18" fill="#F1F5F9"/>
+  <rect x="654" y="122" width="424" height="516" rx="42" fill="#111827"/>
+  <rect x="704" y="172" width="240" height="22" rx="11" fill="#FFFFFF"/>
+  <rect x="704" y="222" width="294" height="13" rx="6.5" fill="#94A3B8"/>
+  <rect x="704" y="280" width="310" height="210" rx="30" fill="#1D4ED8"/>
+  <path d="M750 410L814 344L870 390L948 318" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="704" y="526" width="310" height="54" rx="18" fill="#1F2937"/>
+  <text x="154" y="614" fill="#2563EB" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Polygon Local</text>
+</svg>

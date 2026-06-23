@@ -1,0 +1,20 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Gift Djinn app preview</title>
+  <desc id="desc">Premium consumer gifting app placeholder with recommendation cards and app-store polish.</desc>
+  <rect width="1200" height="760" fill="#0B1628"/>
+  <rect x="90" y="90" width="1020" height="580" rx="44" fill="#F8FAFC"/>
+  <rect x="142" y="140" width="330" height="480" rx="40" fill="#111827"/>
+  <rect x="184" y="190" width="162" height="20" rx="10" fill="#FFFFFF"/>
+  <rect x="184" y="244" width="214" height="13" rx="6.5" fill="#94A3B8"/>
+  <rect x="184" y="298" width="246" height="180" rx="34" fill="#7C3AED"/>
+  <path d="M256 380H358M307 328V438" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/>
+  <rect x="184" y="516" width="246" height="48" rx="16" fill="#1F2937"/>
+  <rect x="540" y="140" width="518" height="140" rx="32" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="590" y="188" width="184" height="18" rx="9" fill="#0F172A"/>
+  <rect x="590" y="232" width="330" height="14" rx="7" fill="#94A3B8"/>
+  <rect x="540" y="314" width="240" height="306" rx="32" fill="#EEF2FF"/>
+  <rect x="818" y="314" width="240" height="306" rx="32" fill="#DBEAFE"/>
+  <rect x="590" y="514" width="138" height="42" rx="14" fill="#2563EB"/>
+  <rect x="868" y="514" width="138" height="42" rx="14" fill="#7C3AED"/>
+  <text x="590" y="410" fill="#2563EB" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Gift Djinn</text>
+</svg>
