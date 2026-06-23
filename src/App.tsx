@@ -46,7 +46,6 @@ export default function App() {
       ) : (
         <main>
           <Hero onBookCall={() => setIsBookingOpen(true)} />
-          <TrustBar />
           <ProjectsSection />
           <CTASection />
           <ServicesSection />
