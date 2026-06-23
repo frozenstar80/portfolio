@@ -47,7 +47,7 @@ export const Navbar = ({ activeSection, isDark, onThemeToggle, onBookCall }: Nav
           <button
             type="button"
             onClick={onBookCall}
-            className="hidden rounded-full bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-blue-700 sm:inline-flex"
+            className="hidden rounded-full bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-500/20 sm:inline-flex dark:!bg-white dark:!text-slate-950 dark:shadow-lg dark:shadow-black/20 dark:hover:!bg-blue-50 dark:hover:!text-blue-700"
           >
             Discuss App
           </button>
