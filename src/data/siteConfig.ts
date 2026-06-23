@@ -22,7 +22,7 @@ export const siteConfig = {
     { label: "Contact", href: "#contact", section: "contact" },
   ],
   proof: [
-    "4+ Years Experience",
+    "5+ Years Experience",
     "Live Apps on App Store",
     "International Client Work",
     "Android + iOS + Backend-Connected Apps",
