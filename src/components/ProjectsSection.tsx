@@ -6,7 +6,7 @@ import { AnimatedSection } from "./AnimatedSection";
 import { ProjectCard } from "./ProjectCard";
 import { SectionHeading } from "./SectionHeading";
 
-const filters = ["All", "Android", "iOS", "Flutter", "Full Stack", "Live", "Under Development"] as const;
+const filters = ["All", "Android", "iOS", "Flutter", "Full Stack", "Backend-connected", "Live", "Under Development"] as const;
 type ProjectFilter = (typeof filters)[number];
 
 export const ProjectsSection = () => {
@@ -17,6 +17,9 @@ export const ProjectsSection = () => {
     if (activeFilter === "Live" || activeFilter === "Under Development") {
       return projects.filter((project) => project.status === activeFilter);
     }
+    if (activeFilter === "Backend-connected") {
+      return projects.filter((project) => project.platforms.some((platform) => platform.toLowerCase().includes("backend")));
+    }
     return projects.filter((project) => project.category === activeFilter);
   }, [activeFilter]);
 
@@ -25,8 +28,8 @@ export const ProjectsSection = () => {
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Featured work"
-          title="Real apps, client delivery, and launch-ready product thinking"
-          description="A curated set of mobile and full-stack projects shaped for production expectations, app-store releases, API integrations, and overseas collaboration."
+          title="Live and in-progress apps with backend-connected delivery"
+          description="A curated set of client and product-team work covering mobile delivery, API/Firebase integration, production fixes, app-store releases, and overseas collaboration."
         />
 
         <div className="mb-10 flex flex-wrap justify-center gap-2">

@@ -49,7 +49,7 @@ export const Navbar = ({ activeSection, isDark, onThemeToggle, onBookCall }: Nav
             onClick={onBookCall}
             className="hidden rounded-full bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-blue-700 sm:inline-flex"
           >
-            Book a Call
+            Discuss App
           </button>
           <button
             type="button"

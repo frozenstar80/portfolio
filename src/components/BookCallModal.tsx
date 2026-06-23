@@ -34,9 +34,9 @@ export const BookCallModal = ({ isOpen, onClose }: BookCallModalProps) => {
   const message = useMemo(
     () =>
       [
-        "Hi Tanmaysingh,",
+        "Hi Tanmay,",
         "",
-        "I would like to book a call for an app project.",
+        "I would like to discuss an app project.",
         "",
         `Name: ${name || "-"}`,
         `Email: ${email || "-"}`,
@@ -68,7 +68,7 @@ export const BookCallModal = ({ isOpen, onClose }: BookCallModalProps) => {
               <CalendarDays size={14} /> Interactive call request
             </p>
             <h2 id="book-call-title" className="mt-4 text-2xl font-semibold tracking-tight text-slate-950 dark:text-white">
-              Book a project discussion
+              Discuss your app project
             </h2>
             <p className="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-300">
               Share a few details and this will open a ready-to-send email. You can also continue on WhatsApp.

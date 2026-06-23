@@ -13,7 +13,7 @@ export const processSteps = [
   },
   {
     title: "Development",
-    description: "Build the app with clean architecture, reusable components, and clear updates.",
+    description: "Build mobile screens, API/Firebase workflows, backend-connected states, and clear updates.",
   },
   {
     title: "Testing",

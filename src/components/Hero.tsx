@@ -15,7 +15,7 @@ export const Hero = ({ onBookCall }: HeroProps) => (
       <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65 }}>
         <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700 shadow-sm dark:border-emerald-400/20 dark:bg-emerald-400/10 dark:text-emerald-200">
           <span className="h-2 w-2 rounded-full bg-emerald-500 shadow-[0_0_0_5px_rgba(16,185,129,0.14)]" />
-          {siteConfig.availability}
+          Backend-connected mobile app delivery
         </div>
         <h1 className="mt-6 max-w-5xl text-4xl font-semibold tracking-tight text-slate-950 dark:text-white sm:text-5xl lg:text-6xl">
           {siteConfig.headline}
@@ -26,25 +26,29 @@ export const Hero = ({ onBookCall }: HeroProps) => (
             href="#projects"
             className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-3.5 text-sm font-semibold text-white shadow-premium transition hover:-translate-y-0.5 hover:bg-slate-800 dark:bg-blue-600 dark:text-white dark:hover:bg-blue-500"
           >
-            View Projects <ArrowRight size={17} />
+            View Client Projects <ArrowRight size={17} />
           </a>
           <button
             type="button"
             onClick={onBookCall}
             className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-6 py-3.5 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300 hover:text-blue-700 dark:border-white/10 dark:bg-white/8 dark:text-white dark:hover:border-blue-300"
           >
-            <CalendarDays size={17} /> Book a Call
+            <CalendarDays size={17} /> Discuss Your App
           </button>
           <a
-            href="#contact"
+            href={siteConfig.whatsapp}
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex items-center justify-center rounded-full px-6 py-3.5 text-sm font-semibold text-blue-700 transition hover:bg-blue-50 dark:text-blue-300 dark:hover:bg-white/10"
           >
-            Contact Me
+            Contact on WhatsApp
           </a>
         </div>
 
-        <div className="mt-9 grid gap-3 sm:grid-cols-3">
-          {["End-to-end delivery", "App-store launch help", "Async client updates"].map((item) => (
+        <p className="mt-6 text-sm font-semibold text-slate-500 dark:text-slate-400">{siteConfig.proofText}</p>
+
+        <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {siteConfig.proof.map((item) => (
             <div key={item} className="flex items-center gap-2 text-sm font-medium text-slate-600 dark:text-slate-300">
               <CheckCircle2 className="text-blue-600 dark:text-blue-300" size={18} />
               {item}
@@ -78,8 +82,8 @@ export const Hero = ({ onBookCall }: HeroProps) => (
               <Globe2 size={20} />
             </span>
             <div>
-              <p className="text-sm font-semibold text-slate-950 dark:text-white">Built for overseas collaboration</p>
-              <p className="text-sm text-slate-500 dark:text-slate-400">Clear scope, reliable updates, launch support.</p>
+              <p className="text-sm font-semibold text-slate-950 dark:text-white">Plan, build, launch, maintain</p>
+              <p className="text-sm text-slate-500 dark:text-slate-400">Mobile apps with APIs, Firebase, release support.</p>
             </div>
           </div>
         </div>

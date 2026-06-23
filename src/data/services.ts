@@ -6,53 +6,49 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    title: "MVP App Development",
-    description: "Turn a product idea into a focused, launch-ready first version.",
-    deliverables: ["Scope planning", "Core user flows", "Launch support"],
+    title: "MVP Planning & Product Scope",
+    description:
+      "I help founders convert rough app ideas into clear MVP scope, user flows, feature lists, milestones, and launch roadmap.",
+    deliverables: ["Feature planning", "MVP scope", "User flow breakdown", "Milestone plan"],
   },
   {
-    title: "Android App Development",
-    description: "Native Android apps with maintainable architecture and production polish.",
-    deliverables: ["Kotlin/Java", "Jetpack patterns", "Play Store support"],
+    title: "Android & iOS App Development",
+    description: "Build production-ready mobile apps using native Android or Flutter depending on project needs.",
+    deliverables: ["Android app", "iOS app", "Flutter cross-platform app", "Responsive UI", "App-store-ready builds"],
   },
   {
-    title: "iOS/Flutter App Development",
-    description: "Cross-platform apps with a consistent experience across iOS and Android.",
-    deliverables: ["Flutter/Dart", "Reusable UI", "App Store support"],
+    title: "Backend API Development",
+    description:
+      "Build or coordinate backend systems required for mobile apps, including authentication, user management, business logic, database integration, and API contracts.",
+    deliverables: ["REST APIs", "Authentication", "Database schema", "API documentation", "Error handling"],
   },
   {
-    title: "Existing App Bug Fixing",
-    description: "Stabilize shipped apps, resolve crashes, and clean up user-facing issues.",
-    deliverables: ["Crash review", "Bug fixes", "Regression testing"],
+    title: "Firebase & Cloud Backend",
+    description:
+      "Use Firebase services for fast MVPs and scalable app features such as authentication, notifications, analytics, crash reporting, and real-time data.",
+    deliverables: ["Firebase Auth", "Firestore/Realtime Database", "FCM push notifications", "Crashlytics", "Analytics"],
   },
   {
-    title: "API Integration",
-    description: "Connect mobile apps with backend systems, third-party APIs, and auth flows.",
-    deliverables: ["REST APIs", "Error states", "Secure data handling"],
+    title: "Admin Panel & Dashboard",
+    description: "Plan and build admin workflows needed to manage users, content, bookings, orders, payments, and app operations.",
+    deliverables: ["Admin panel planning", "Role-based access", "User/content management", "Dashboard APIs"],
   },
   {
-    title: "Firebase Integration",
-    description: "Add authentication, database, notifications, analytics, and crash visibility.",
-    deliverables: ["Auth", "Firestore", "Crashlytics"],
+    title: "API Integration & Third-Party Services",
+    description:
+      "Connect mobile apps with existing backend systems, payment gateways, maps, chat, notifications, CRM, and third-party APIs.",
+    deliverables: ["REST API integration", "Payment integration", "Maps/location", "Notifications", "Error-state handling"],
   },
   {
-    title: "Payment Integration",
-    description: "Implement payment-ready flows with careful UX and integration discipline.",
-    deliverables: ["Checkout flows", "Webhook coordination", "QA support"],
+    title: "Deployment & Release Support",
+    description:
+      "Prepare production builds, app store submissions, GitHub Actions/Jenkins pipelines, environment setup, and release support.",
+    deliverables: ["Play Store release", "App Store release", "CI/CD setup", "Build automation", "Production checklist"],
   },
   {
-    title: "Release Support",
-    description: "Prepare builds, metadata, testing, and submission for Play Store or App Store.",
-    deliverables: ["Build setup", "Store assets", "Submission checks"],
-  },
-  {
-    title: "App Maintenance",
-    description: "Keep your app healthy after launch with fixes, updates, and feature iteration.",
-    deliverables: ["Monitoring", "Updates", "Ongoing improvements"],
-  },
-  {
-    title: "Founder Consultation",
-    description: "Clarify scope, tech choices, roadmap, and build strategy before development.",
-    deliverables: ["Technical review", "MVP scope", "Delivery plan"],
+    title: "Maintenance & Production Support",
+    description:
+      "Support apps after launch with bug fixes, monitoring, performance improvements, feature updates, and release management.",
+    deliverables: ["Crash fixes", "Performance improvements", "Version updates", "Monitoring support"],
   },
 ];

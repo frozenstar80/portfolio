@@ -7,8 +7,8 @@ export const SkillsSection = () => (
     <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
       <SectionHeading
         eyebrow="Skills"
-        title="Practical stack coverage for modern app delivery"
-        description="Focused on the technologies that matter for production mobile apps: architecture, API integration, data, release support, and developer collaboration."
+        title="Client-friendly capability across mobile, backend integration, data, and release"
+        description="Focused on the technologies and workflows that matter for production apps: Android, iOS, Flutter, APIs, Firebase, databases, CI/CD, monitoring, and launch support."
       />
       <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         {skillGroups.map((group) => (

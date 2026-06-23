@@ -1,4 +1,4 @@
-import { ArrowUpRight, ExternalLink } from "lucide-react";
+import { ArrowUpRight, ExternalLink, MapPin, UserRound } from "lucide-react";
 import { motion } from "framer-motion";
 import type { Project } from "../data/projects";
 import { assetPath, formatEngagementLabel, getProjectHref } from "../lib/utils";
@@ -39,6 +39,17 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
 
         <h3 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white">{project.title}</h3>
         <p className="mt-3 min-h-[4rem] text-sm leading-7 text-slate-600 dark:text-slate-300">{project.shortDescription}</p>
+
+        <div className="mt-5 grid gap-3 rounded-2xl bg-slate-50 p-4 text-sm dark:bg-white/[0.06]">
+          <div className="flex items-center gap-2 text-slate-600 dark:text-slate-300">
+            <UserRound size={16} className="text-blue-600 dark:text-blue-300" />
+            <span>{project.clientName ?? "Confidential client"} • {project.role}</span>
+          </div>
+          <div className="flex items-center gap-2 text-slate-600 dark:text-slate-300">
+            <MapPin size={16} className="text-blue-600 dark:text-blue-300" />
+            <span>{project.clientCountry ?? "Remote"} • {project.platforms.join(" / ")}</span>
+          </div>
+        </div>
 
         <div className="mt-5 flex flex-wrap gap-2">
           {project.technologies.slice(0, 5).map((technology) => (

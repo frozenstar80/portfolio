@@ -1,5 +1,6 @@
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowLeft, ExternalLink, MessageCircle } from "lucide-react";
 import type { Project } from "../data/projects";
+import { siteConfig } from "../data/siteConfig";
 import { assetPath, formatEngagementLabel, formatProjectDate } from "../lib/utils";
 
 type ProjectCaseStudyProps = {
@@ -60,48 +61,116 @@ export const ProjectCaseStudy = ({ project }: ProjectCaseStudyProps) => {
 
         <section className="mt-8 grid gap-6 lg:grid-cols-[0.72fr_1.28fr]">
           <aside className="rounded-3xl border border-slate-200 bg-white p-6 dark:border-white/10 dark:bg-white/[0.06]">
-            <h2 className="text-lg font-semibold text-slate-950 dark:text-white">Technology stack</h2>
+            <h2 className="text-lg font-semibold text-slate-950 dark:text-white">Tech stack</h2>
             <div className="mt-5 flex flex-wrap gap-2">
-              {project.technologies.map((technology) => (
+              {(project.caseStudy?.techStack ?? project.technologies).map((technology) => (
                 <span key={technology} className="rounded-full bg-slate-100 px-3 py-1.5 text-sm font-medium text-slate-700 dark:bg-white/10 dark:text-slate-200">
                   {technology}
                 </span>
               ))}
             </div>
 
-            <h2 className="mt-8 text-lg font-semibold text-slate-950 dark:text-white">Key features</h2>
+            <h2 className="mt-8 text-lg font-semibold text-slate-950 dark:text-white">Platforms</h2>
             <ul className="mt-4 space-y-3 text-sm leading-6 text-slate-600 dark:text-slate-300">
-              {project.features.map((feature) => (
-                <li key={feature}>• {feature}</li>
+              {project.platforms.map((platform) => (
+                <li key={platform}>• {platform}</li>
               ))}
             </ul>
+
+            <h2 className="mt-8 text-lg font-semibold text-slate-950 dark:text-white">Live status</h2>
+            <p className="mt-3 text-sm font-semibold text-emerald-700 dark:text-emerald-300">{project.status}</p>
           </aside>
 
           <div className="grid gap-6">
             <article className="case-panel">
-              <h2>Project summary</h2>
-              <p>{project.caseStudy?.summary ?? project.shortDescription}</p>
+              <h2>Project overview</h2>
+              <p>{project.caseStudy?.overview ?? project.description}</p>
             </article>
             <article className="case-panel">
-              <h2>Challenge</h2>
-              <p>{project.caseStudy?.challenge ?? "The project required a reliable mobile experience, clear integration work, and careful delivery support."}</p>
+              <h2>Client/context</h2>
+              <p>{project.caseStudy?.clientContext ?? `${project.clientName ?? "Client"} project delivered as ${formatEngagementLabel(project.projectType)}.`}</p>
             </article>
             <article className="case-panel">
-              <h2>Approach</h2>
+              <h2>Problem</h2>
+              <p>{project.caseStudy?.problem ?? "The project required a reliable mobile experience, backend-connected workflows, and careful delivery support."}</p>
+            </article>
+            <article className="case-panel">
+              <h2>What I handled</h2>
               <ul>
-                {(project.caseStudy?.approach ?? project.features).map((item) => (
+                {(project.caseStudy?.handled ?? project.features).map((item) => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>
             </article>
             <article className="case-panel">
-              <h2>Outcome</h2>
+              <h2>Mobile app features</h2>
+              <ul>
+                {(project.caseStudy?.mobileFeatures ?? project.features).map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </article>
+            <article className="case-panel">
+              <h2>Backend/API/Firebase involvement</h2>
+              <ul>
+                {(project.caseStudy?.backendAndApi ?? project.backendInvolvement).map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </article>
+            <article className="case-panel">
+              <h2>Deployment/release support</h2>
+              <ul>
+                {(project.caseStudy?.deploymentSupport ?? project.releaseSupport).map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </article>
+            <article className="case-panel">
+              <h2>Result/outcome</h2>
               <ul>
                 {(project.caseStudy?.outcome ?? [project.status]).map((item) => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>
             </article>
+          </div>
+        </section>
+
+        <section className="mt-8">
+          <article className="case-panel">
+            <h2>Screenshots/mockups</h2>
+            <div className="mt-5 grid gap-4 sm:grid-cols-2">
+              {project.images.map((image) => (
+                <img
+                  key={image}
+                  src={assetPath(image)}
+                  alt={`${project.title} app screenshot or mockup`}
+                  className="aspect-[16/10] rounded-2xl border border-slate-200 object-cover dark:border-white/10"
+                  loading="lazy"
+                />
+              ))}
+            </div>
+          </article>
+        </section>
+
+        <section className="mt-8 rounded-3xl bg-slate-950 p-8 text-white shadow-premium dark:border dark:border-white/10 dark:bg-navy-900">
+          <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-blue-300">Build something similar</p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight">Want to build something similar?</h2>
+              <p className="mt-4 max-w-2xl leading-8 text-slate-300">
+                Share your app idea, existing backend, current blockers, or launch goals and I’ll help you turn it into a clear delivery plan.
+              </p>
+            </div>
+            <a
+              href={`${siteConfig.whatsapp}?text=${encodeURIComponent(`Hi Tanmay, I want to discuss an app similar to ${project.title}.`)}`}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-blue-700"
+            >
+              <MessageCircle size={17} /> Discuss Your App
+            </a>
           </div>
         </section>
       </div>

@@ -2,6 +2,7 @@ import { AboutSection } from "./components/AboutSection";
 import { BookCallModal } from "./components/BookCallModal";
 import { ContactSection } from "./components/ContactSection";
 import { CTASection } from "./components/CTASection";
+import { DeliveryCapabilitySection } from "./components/DeliveryCapabilitySection";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
@@ -11,6 +12,7 @@ import { ServicesSection } from "./components/ServicesSection";
 import { SkillsSection } from "./components/SkillsSection";
 import { TestimonialsSection } from "./components/TestimonialsSection";
 import { TrustBar } from "./components/TrustBar";
+import { TrustSection } from "./components/TrustSection";
 import { siteConfig } from "./data/siteConfig";
 import { projects } from "./data/projects";
 import { useState } from "react";
@@ -48,9 +50,11 @@ export default function App() {
           <ProjectsSection />
           <CTASection />
           <ServicesSection />
+          <DeliveryCapabilitySection />
           <ProcessSection />
           <SkillsSection />
           <AboutSection />
+          <TrustSection />
           <TestimonialsSection />
           <ContactSection />
         </main>

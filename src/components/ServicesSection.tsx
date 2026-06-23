@@ -8,8 +8,8 @@ export const ServicesSection = () => (
     <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
       <SectionHeading
         eyebrow="Services"
-        title="Full-cycle mobile delivery without the agency overhead"
-        description="Pick focused implementation help, ongoing maintenance, or end-to-end support from idea validation through store release."
+        title="Mobile apps, backend-connected workflows, admin needs, and release support"
+        description="Pick focused implementation help, MVP planning, backend/API coordination, Firebase setup, admin workflows, ongoing maintenance, or end-to-end launch support."
       />
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((service) => (
