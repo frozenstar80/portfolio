@@ -167,7 +167,7 @@ export const ProjectCaseStudy = ({ project }: ProjectCaseStudyProps) => {
               href={`${siteConfig.whatsapp}?text=${encodeURIComponent(`Hi Tanmay, I want to discuss an app similar to ${project.title}.`)}`}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-blue-700"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:-translate-y-0.5 hover:bg-blue-700 dark:bg-white dark:text-black dark:shadow-black/20 dark:hover:bg-blue-50 dark:hover:text-black"
             >
               <MessageCircle size={17} /> Discuss Your App
             </a>

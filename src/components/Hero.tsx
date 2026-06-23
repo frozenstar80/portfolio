@@ -31,7 +31,7 @@ export const Hero = ({ onBookCall }: HeroProps) => (
           <button
             type="button"
             onClick={onBookCall}
-            className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-6 py-3.5 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300 hover:text-blue-700 dark:border-white/10 dark:bg-white/8 dark:text-white dark:hover:border-blue-300"
+            className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-6 py-3.5 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300 hover:text-blue-700 dark:border-white dark:bg-white dark:text-black dark:hover:border-blue-200 dark:hover:bg-blue-50 dark:hover:text-black"
           >
             <CalendarDays size={17} /> Discuss Your App
           </button>
