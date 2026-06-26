@@ -11,7 +11,6 @@ import { ProjectsSection } from "./components/ProjectsSection";
 import { ServicesSection } from "./components/ServicesSection";
 import { SkillsSection } from "./components/SkillsSection";
 import { TestimonialsSection } from "./components/TestimonialsSection";
-import { TrustBar } from "./components/TrustBar";
 import { TrustSection } from "./components/TrustSection";
 import { siteConfig } from "./data/siteConfig";
 import { projects } from "./data/projects";
