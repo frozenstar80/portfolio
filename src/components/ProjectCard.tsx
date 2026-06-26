@@ -15,11 +15,11 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
       layout
       className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-premium dark:border-white/10 dark:bg-white/[0.06] dark:hover:shadow-premium-dark"
     >
-      <a href={getProjectHref(project)} className="flex h-52 items-center justify-center overflow-hidden bg-slate-100 p-2 sm:h-56 lg:h-60 dark:bg-white/5" aria-label={`Open case study for ${project.title}`}>
+      <a href={getProjectHref(project)} className="block overflow-hidden bg-slate-100 dark:bg-white/5" aria-label={`Open case study for ${project.title}`}>
         <img
           src={assetPath(project.coverImage)}
           alt={`${project.title} app preview`}
-          className="h-full w-full object-fill transition duration-500 group-hover:scale-[1.02]"
+          className="aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-105"
           loading="lazy"
         />
       </a>
