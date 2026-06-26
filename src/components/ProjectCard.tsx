@@ -19,7 +19,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
         <img
           src={assetPath(project.coverImage)}
           alt={`${project.title} app preview`}
-          className="h-full w-full object-contain transition duration-500 group-hover:scale-[1.02]"
+          className="h-full w-full object-fill transition duration-500 group-hover:scale-[1.02]"
           loading="lazy"
         />
       </a>

@@ -41,7 +41,7 @@ export const ProjectCaseStudy = ({ project }: ProjectCaseStudyProps) => {
             ) : null}
           </div>
           <div className="flex h-56 items-center justify-center overflow-hidden rounded-3xl border border-slate-200 bg-white p-3 shadow-premium sm:h-64 lg:h-72 dark:border-white/10 dark:bg-white/[0.06] dark:shadow-premium-dark">
-            <img src={assetPath(project.coverImage)} alt={`${project.title} case study preview`} className="h-full w-full rounded-[1.25rem] object-contain" />
+            <img src={assetPath(project.coverImage)} alt={`${project.title} case study preview`} className="h-full w-full rounded-[1.25rem] object-fill" />
           </div>
         </section>
 
@@ -146,7 +146,7 @@ export const ProjectCaseStudy = ({ project }: ProjectCaseStudyProps) => {
                   <img
                     src={assetPath(image)}
                     alt={`${project.title} app screenshot or mockup`}
-                    className="h-full w-full object-contain"
+                    className="h-full w-full object-fill"
                     loading="lazy"
                   />
                 </div>
